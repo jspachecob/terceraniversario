@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="src/img/portada.png" type="png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tres Años</title>
+</head>
+
+<body onload="init()">
+  <section id="modal">
+    <div class="login" id="login">
+      <label for="DiaQueNosConocimos">¿Que dia nos conocimos?</label>
+      <input type="date" name="DiaQueNosConocimos" id="DiaQueNosConocimos">
+      <label for="DiaQueNosHicimosNovios">¿Que dìa nos hicimos novios</label>
+      <input type="date" name="DiaQueNosHicimosNovios" id="DiaQueNosHicimosNovios">
+      <label for="colorFavorito">¿Cual es nuestro color?</label>
+      <select name="colorFavorito" id="colorFavorito">
+        <option value="">Color</option>
+        <option value="Rojo">❤️</option>
+        <option value="Azul">💙</option>
+        <option value="Verde">💚</option>
+        <option value="Amarillo">💛</option>
+        <option value="Morado">💜</option>
+        <option value="Naranja">🧡</option>
+        <option value="Cafe">🤎</option>
+        <option value="Negro">🖤</option>
+      </select>
+      <button onclick="ingresar()" id="ingresar">Entrar</button>
+
+      <p id="alertaError">Error 💔</p>
+
+
+
+    </div>
+    <div class="bienvenida" id="bienvenida">
+      <p>Mi vida, 3 años ya 🥺, para celebrar te hice este sitio donde puedes ver los poemas que te he ido haciendo a lo
+        largo de este mes jsjs, esto lo hice con anticipación para que quedara lindo, las palabras me faltan para
+        agradecerte por todo lo que haces por mi, y todo lo lindo que hemos pasado por todo este tiempo, han sido los
+        mejores 3 años sin duda alguna mi vida, aunque a veces con bajos y altos aquí le vamos echando ganitas, cómo
+        desde el primer día, te amo un montón espero te gusteeeeeeeeeee!!!</p>
+      <button id="cerrarBienvenida">ok 🌷</button>
+    </div>
+
+
+  </section>
+
+
+  <section class="container">
+    <header>
+      <p>Felices tres años </p>
+
+      <div class="iconMenu" id="abrirMenu" onclick="abrirMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="menu" id="menu">
+
+      <div class="portadaPoemas">
+
+        <div class="portada">
+          <img src="src/img/portada.png" alt="">
+          <p>Tres años</p>
+        </div>
+
+        <div class="info">
+          <p>¡Hola amor!, estos poemas son como detalle de los tres años que llevamos juntos espero te guste</p>
+        </div>
+
+      </div>
+
+      <div class="listaDePoemas">
+        <div class="titulosPoemas" id="p1"></div>
+        <div class="titulosPoemas" id="p2"></div>
+        <div class="titulosPoemas" id="p3"></div>
+        <div class="titulosPoemas" id="p4"></div>
+        <div class="titulosPoemas" id="p5"></div>
+        <div class="titulosPoemas" id="p6"></div>
+        <div class="titulosPoemas" id="p7"></div>
+        <div class="titulosPoemas" id="p8"></div>
+        <div class="titulosPoemas" id="p9"></div>
+        <div class="titulosPoemas" id="p10"></div>
+        <div class="titulosPoemas" id="p11"></div>
+      </div>
+
+    </div>
+
+    <div class="poemas">
+      <p id="tituPoema" class="titulo"></p>
+      <p id="cuerpoPoema" class="cuerpoPoema"> Vista previa</p><br>
+      <button id="verVideo">Video</button>
+    </div>
+
+
+
+    <div class="detalles">
+      <img id="ff" src="src/img/portada.png" alt="">
+      <p id="gg">Autor: Juan Se.<br>
+        Dirigido a: Lizzy <br>
+        25 Octubre 2023</p>
+
+      <img id="hh" src=" " alt="">
+    </div>
+
+
+
+
+  </section>
+
+  <section class="reproductorDeVideo" id="reproductorDeVideo">
+    <button id="cerrarReproductor">x</button>
+    <div>
+      <video controls>
+        <source src="src/vid/lv_0_20231010171409.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <script src="js/mostrarpoemas.js"></script>
+</body>
+
+</html>
